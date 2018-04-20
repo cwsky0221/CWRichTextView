@@ -1,7 +1,16 @@
-AndroidÆ½Ì¨ÏÂµÄ¸»ÎÄ±¾½âÎöÆ÷
+Androidå¹³å°ä¸‹çš„å¯Œæ–‡æœ¬è§£æå™¨
 
-1.Ö§³Ö×Ô¶¨Òåhtml±êÇ©
-2.Ö§³Ö¸÷ÖÖ±êÇ©ÖĞstyleÊôĞÔµÄ½âÎö
+1.æ”¯æŒè‡ªå®šä¹‰htmlæ ‡ç­¾
+2.æ”¯æŒå„ç§æ ‡ç­¾ä¸­styleå±æ€§çš„è§£æ
 
 
-demoÏîÄ¿£¬²»¶¨Ê±»áÍêÉÆ
+ä½¿ç”¨æ–¹æ³•ï¼š
+String content = "<p><span style=\"text-decoration: underline;\">æµ‹è¯•</span></p>";
+
+//è®°ä½è¦åŠ ä¸Šhtmlï¼Œbodyçš„æ ‡ç­¾ä¸ç„¶ä¼šå¼‚å¸¸
+content = "<html><body>" + content + "</body></html>";
+Spanned s = UPHtmlTagHandler.fromHtml(content,null,new UPExtendTagHandler(this,tv.getTextColors()));
+tv.setText(s);
+
+demoé¡¹ç›®ï¼Œä¸å®šæ—¶ä¼šå®Œå–„
+
