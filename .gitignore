@@ -1,0 +1,15 @@
+bin/
+gen/
+out/
+build/
+.settings/
+.idea/
+.gradle/
+local.properties
+.classpath
+.project
+*.iml
+*.ipr
+*.iws
+.DS_Store
+.pulltrorefreshlibrary/build/
